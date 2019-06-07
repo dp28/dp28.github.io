@@ -6,28 +6,27 @@ published: true
 
 Testing this blogging mechanism
 
-Can it display code?
+Can it display code? Maybe in `kramdown`?
 
 
+~~~ Makefile
+install: test
 
-  ```Makefile
-  install: test
-
-  test:
-      npm test
-  ```
+test:
+    npm test
+~~~ 
 
 spacer
 
-  ```javascript
-  function test() {
-    const isES6 = () => true;
-  }
-  ```
+~~~ javascript
+function test() {
+  const isES6 = () => true;
+}
+~~~ 
 
 Why is this code block not working properly?
 
 
-  ```bash
-  make test
-  ```
+~~~ bash
+make test
+~~~ 
