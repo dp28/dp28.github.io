@@ -12,11 +12,11 @@ Can it display code? Maybe Make works??
 install: test
 
 test: node_modules
-    npm test
+	npm test
     
 node_modules:
 	npm install
-    touch node_modules
+	touch node_modules
 ~~~ 
 
 spacer
