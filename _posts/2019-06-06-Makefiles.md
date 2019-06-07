@@ -6,10 +6,18 @@ published: true
 
 Testing this blogging mechanism
 
-Can it display code? Maybe in `kramdown`?
+Can it display code? Maybe Make works??
 
 
 ~~~ Make
+install: test
+
+test:
+    npm test
+~~~ 
+
+
+~~~ make
 install: test
 
 test:
