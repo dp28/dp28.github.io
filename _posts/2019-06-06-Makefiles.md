@@ -8,12 +8,7 @@ Testing this blogging mechanism
 
 Can it display code?
 
-```javascript
 
-function test() {
-  const isES6 = () => true;
-}
-```
 
 ```Makefile
 install: test
@@ -21,6 +16,17 @@ install: test
 test:
 	npm test
 ```
+
+spacer
+
+```javascript
+function test() {
+  const isES6 = () => true;
+}
+```
+
+Why is this code block not working properly?
+
 
 ```bash
 make test
