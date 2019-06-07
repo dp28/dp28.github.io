@@ -9,7 +9,7 @@ Testing this blogging mechanism
 Can it display code? Maybe in `kramdown`?
 
 
-~~~ Makefile
+~~~ Make
 install: test
 
 test:
@@ -29,4 +29,4 @@ Why is this code block not working properly?
 
 ~~~ bash
 make test
-~~~ 
+~~~
