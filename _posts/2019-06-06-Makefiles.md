@@ -8,7 +8,8 @@ Testing this blogging mechanism
 
 Can it display code? Maybe Make works??
 
-~~~ make
+
+~~~make
 install: test
 
 test: node_modules
@@ -19,17 +20,20 @@ node_modules:
     touch node_modules
 ~~~ 
 
+
 spacer
 
-~~~ javascript
+
+~~~javascript
 function test() {
   const isES6 = () => true;
 }
 ~~~ 
 
+
 Why is this code block not working properly?
 
 
-~~~ bash
+~~~bash
 make test
 ~~~
