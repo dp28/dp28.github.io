@@ -2,7 +2,10 @@
   <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
     <div>
       <h1>
-        <a href="{{ site.baseUrl }}">{{ site.name }}</a>
+        <a href="{{ site.baseUrl }}">
+          <span class="logo-start">{{ site.logo.start }}</span>
+          <span class="logo-end">{{ site.logo.end }}</span>
+        </a>
       </h1>
       <p>{{site.description}}</p>
     </div>

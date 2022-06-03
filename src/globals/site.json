@@ -3,6 +3,10 @@
   "description": "Daniel Patterson's blog",
   "url": "https://dp28.github.io",
   "baseUrl": "/",
+  "logo": {
+    "start": "DJP",
+    "end": "Dev"
+  },
   "author": {
     "handle": "",
     "name": "Daniel Patterson"

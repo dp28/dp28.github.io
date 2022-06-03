@@ -9,9 +9,31 @@
   white-space: pre;
 }
 
+:root {
+  --background-colour: #2e2e2e;
+  --comment-colour: #797979;
+  --white: #d6d6d6;
+  --yellow: #e5b567;
+  --green: #b4d273;
+  --orange: #e87d3e;
+  --purple: #9e86c8;
+  --pink: #b05279;
+  --blue: #6c99bb;
+}
+
+.logo-start {
+  color: var(--white);
+}
+
+.logo-end {
+  color: var(--comment-colour);
+}
+
 html,
 body {
-  @apply antialiased text-gray-300 bg-gray-900;
+  @apply antialiased;
+  background-color: var(--background-colour);
+  color: var(--white);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -37,7 +59,7 @@ h4 > a,
 h5 > a,
 h6 > a,
 a {
-  @apply text-white;
+  color: var(--yellow);
 }
 
 h1 {
@@ -165,4 +187,8 @@ hr {
 
 .top-notice > a::after {
   content: " 🔥";
+}
+
+.date {
+  color: var(--comment-colour);
 }

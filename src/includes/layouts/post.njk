@@ -25,11 +25,11 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/post/'}}{{ title | slug 
 
         {% if date %}
             {% if updatedDate and (date|string) !== (updatedDate|string) %}
-              <p class="text-sm italic">Last updated on
+              <p class="date text-sm italic">Last updated on
                     <span datetime="{{ date }}">{{ updatedDate | dateDisplay }}</span>. Created on
                     <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
             {% else %}
-                <p class="text-sm italic">Created on
+                <p class="date text-sm italic">Created on
                     <span datetime="{{ date }}">{{ date | dateDisplay }}</span>.</p>
             {% endif %}
         {% endif %}
