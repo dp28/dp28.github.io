@@ -21,6 +21,7 @@
   --blue: #6c99bb;
 
   --primary-colour: var(--yellow);
+  --secondary-colour: var(--blue);
 }
 
 .logo-start {
@@ -122,7 +123,7 @@ hr {
 }
 
 .content > blockquote {
-  border-left: 0.5rem solid #718096;
+  border-left: 0.5rem solid var(--secondary-colour);
   margin: 1.5em 1.5em;
   padding: 0.5em 1em;
 }
@@ -193,4 +194,21 @@ hr {
 
 .date {
   color: var(--comment-colour);
+}
+
+.comment {
+  color: var(--comment-colour);
+  font-style: italic;
+}
+
+.comment:hover {
+  color: var(--secondary-colour);
+}
+
+.comment::before {
+  content: "(";
+}
+
+.comment::after {
+  content: ")";
 }
