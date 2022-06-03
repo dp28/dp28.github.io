@@ -9,6 +9,7 @@
 .tag {
   @apply inline-block px-4 py-2 mr-2 mb-2 text-xs font-bold rounded lowercase text-white;
   border: 1px solid transparent;
+  color: black;
 }
 
 .tag:hover {
@@ -19,6 +20,18 @@
   content: "#";
 }
 
-.tag.test {
-  @apply text-gray-900 bg-yellow-500;
+.tag.software-development {
+  background-color: var(--green);
+}
+
+.tag.side-project {
+  background-color: var(--pink);
+}
+
+.tag.writing {
+  background-color: var(--blue);
+}
+
+.tag.communication {
+  background-color: var(--orange);
 }
