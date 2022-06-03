@@ -4,6 +4,6 @@ title: About
 path: about
 ---
 
-This website is a live example of an Eleventy template — it's not a real blog.
-
-People using this template may want to add some information to this page about them or their business.
+I'm Daniel Patterson, a software developer from Northern Ireland, now living in
+Boston, Massachusetts. I'm interested in software development <span class="comment">shock</span>,
+cooking, travel, epic fantasy, and chocolate <span class="comment">mainly chocolate</span>.
