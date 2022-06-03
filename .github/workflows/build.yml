@@ -26,6 +26,9 @@ jobs:
           npm ci
           npm run build
 
+      - name: Add CNAME for custom domain
+        run: echo "www.djpdev.com" > ./dist/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
