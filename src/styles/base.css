@@ -1,17 +1,18 @@
 /* Font (see https://fonts.google.com) */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
 /* Prism Code Highlighting Theme (see https://prismjs.com) */
-@import url('https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-dracula.css');
+@import url("https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-dracula.css");
 
-:not(pre) > code[class*="language-"] { /* Fixes issue where theme removes indentation. */
-	white-space: pre;
+:not(pre) > code[class*="language-"] {
+  /* Fixes issue where theme removes indentation. */
+  white-space: pre;
 }
 
 html,
 body {
   @apply antialiased text-gray-300 bg-gray-900;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -93,7 +94,7 @@ hr {
 }
 
 .attribution::before {
-  content: '— ';
+  content: "— ";
 }
 
 .content > blockquote {
@@ -164,17 +165,4 @@ hr {
 
 .top-notice > a::after {
   content: " 🔥";
-}
-
-#privacy-notice-button {
-  fill: #fff;
-}
-
-#privacy-notice-button-container {
-  margin-top: 2px;
-  @apply p-2;
-}
-
-#privacy-notice-button-container:hover {
-  @apply bg-gray-500 rounded cursor-pointer;
 }
