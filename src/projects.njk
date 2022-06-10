@@ -1,16 +1,9 @@
 ---
-pagination:
-  data: collections.sortedProjects
-  size: 6
-  alias: projects
-  reverse: false
-permalink: "/projects/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+permalink: /projects/
 ---
 
 {% extends 'page.njk' %}
 
 {% block body %}
   {% include "projects.njk" %}
-
-  {% include "pagination.njk" %}
 {% endblock %}
