@@ -237,3 +237,11 @@ hr {
 .project-status.abandoned {
   color: var(--pink);
 }
+
+.project-status.in-progress {
+  color: var(--green);
+}
+
+.project-status.maintained {
+  color: var(--purple);
+}

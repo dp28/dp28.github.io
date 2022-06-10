@@ -9,7 +9,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/projects/'}}{{ title | s
     <h2>{{ title }}</h2>
 
     {% if summary %}
-      <div class="flex">
+      <div class="flex border-dotted border-b pb-2 border-gray-300">
         {%- if logo -%}
           <img
             class="project-logo mr-4 mt-4"
@@ -22,10 +22,10 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/projects/'}}{{ title | s
       </div>
     {% endif %}
 
-    <ul class="flex flex-wrap w-full mt-6 md:justify-between justify-evenly">
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between justify-evenly border-dotted border-b border-gray-300">
       <li>
         <span>Status:</span>
-        <span class="ml-1 project-status {{ status }}">
+        <span class="ml-1 project-status {{ status | slug }}">
           {{ status }}
         </span>
       </li>

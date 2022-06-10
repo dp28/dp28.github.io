@@ -3,7 +3,7 @@
     <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
       <h2>
         <a href="{{ project.url | url }}">{{ project.data.title }}</a>
-        <span class="float-right project-status {{ project.data.status }}">
+        <span class="float-right project-status {{ project.data.status | slug }}">
           {{ project.data.status }}
         </span>
       </h2>
