@@ -11,6 +11,7 @@ logo:
   description: Graph
 tags:
   - project
+  - app
   - javascript
   - software-development
   - chrome-extension

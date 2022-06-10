@@ -12,6 +12,7 @@ logo:
   description: R & D
 tags:
   - project
+  - app
   - javascript
   - react
   - ruby

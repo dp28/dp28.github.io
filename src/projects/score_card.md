@@ -11,6 +11,7 @@ logo:
   description: A hand of cards
 tags:
   - project
+  - app
   - javascript
   - react
   - voice

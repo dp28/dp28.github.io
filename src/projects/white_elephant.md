@@ -12,6 +12,7 @@ logo:
   description: Wrapped gifts
 tags:
   - project
+  - app
   - javascript
   - react
 ---

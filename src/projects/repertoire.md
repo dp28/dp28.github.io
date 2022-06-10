@@ -9,6 +9,7 @@ logo:
   description: List
 tags:
   - project
+  - app
   - javascript
   - react
   - ruby
