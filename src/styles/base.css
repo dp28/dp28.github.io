@@ -230,6 +230,10 @@ hr {
   border-radius: 5px;
 }
 
-.project-status {
+.project-status.finished {
   color: var(--blue);
+}
+
+.project-status.abandoned {
+  color: var(--pink);
 }

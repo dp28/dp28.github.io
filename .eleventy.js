@@ -35,6 +35,21 @@ module.exports = (config) => {
     )
   );
 
+  const StatusesInOrder = [
+    "in progress",
+    "maintained",
+    "finished",
+    "abandoned",
+  ];
+
+  config.addCollection("sortedProjects", (collection) =>
+    [...collection.getFilteredByGlob("src/projects/*.md")].sort(
+      (a, b) =>
+        StatusesInOrder.indexOf(a.data.status) -
+        StatusesInOrder.indexOf(b.data.status)
+    )
+  );
+
   return {
     pathPrefix: require("./src/globals/site.json").baseUrl,
     dir: {

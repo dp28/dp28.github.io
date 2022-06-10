@@ -1,9 +1,9 @@
 ---
 pagination:
-  data: collections.project
+  data: collections.sortedProjects
   size: 6
   alias: projects
-  reverse: true
+  reverse: false
 permalink: "/projects/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
 
