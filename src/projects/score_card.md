@@ -6,6 +6,9 @@ summary: |
 status: abandoned
 project_url: https://card-scores.herokuapp.com/
 github_url: https://github.com/dp28/score-card
+logo:
+  name: score-card.png
+  description: A hand of cards
 tags:
   - project
   - javascript

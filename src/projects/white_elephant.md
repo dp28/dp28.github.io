@@ -8,7 +8,7 @@ status: finished
 project_url: https://white-elephant.djpdev.com/
 github_url: https://github.com/dp28/white-elephant
 logo:
-  url: https://white-elephant.djpdev.com/logo192.png
+  name: white-elephant.png
   description: Wrapped gifts
 tags:
   - project

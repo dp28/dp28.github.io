@@ -8,7 +8,7 @@ status: finished
 project_url: http://www.rndtravels.com/
 github_url: https://github.com/dp28/travel
 logo:
-  url: http://www.rndtravels.com/logo-favicon.png
+  name: travel-blog.png
   description: R & D
 tags:
   - project

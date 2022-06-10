@@ -12,7 +12,7 @@
         {%- if project.data.logo -%}
           <img
             class="project-logo mr-4 mt-4"
-            src="{{ project.data.logo.url }}"
+            src="{{ site.baseUrl }}project-logos/{{ project.data.logo.name }}"
             alt="{{ project.data.logo.description }}"
           />
         {%- endif -%}

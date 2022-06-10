@@ -5,7 +5,7 @@ summary: A web app to make cooking simpler
 status: in progress
 project_url: https://repertoire.djpdev.com/
 logo:
-  url: https://repertoire.djpdev.com/logo192.png
+  name: repertoire.png
   description: List
 tags:
   - project

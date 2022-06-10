@@ -13,7 +13,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/projects/'}}{{ title | s
         {%- if logo -%}
           <img
             class="project-logo mr-4 mt-4"
-            src="{{ logo.url }}"
+            src="{{ site.baseUrl }}project-logos/{{ logo.name }}"
             alt="{{ logo.description }}"
           />
         {%- endif -%}
