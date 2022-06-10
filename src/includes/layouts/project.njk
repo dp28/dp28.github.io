@@ -1,0 +1,50 @@
+---
+permalink: "{% if path %}{{ path | slug }}{% else %}{{'/projects/'}}{{ title | slug }}{% endif %}/index.html"
+---
+
+{% extends 'page.njk' %}
+
+{% block body %}
+  <div>
+    <h2>{{ title }}</h2>
+
+    {% if summary %}
+      <div class="flex">
+        {%- if logo -%}
+          <img
+            class="project-logo mr-4 mt-4"
+            src="{{ logo.url }}"
+            alt="{{ logo.description }}"
+          />
+        {%- endif -%}
+
+        <p class="summary flex-grow">{{ summary }}</p>
+      </div>
+    {% endif %}
+
+    <ul class="flex flex-wrap w-full mt-6 md:justify-between justify-evenly">
+      <li>
+        <span>Status:</span>
+        <span class="ml-1 project-status {{ status }}">
+          {{ status }}
+        </span>
+      </li>
+
+      {% if project_url %}
+        <li>
+          <a href="{{ project_url }}">Project URL</a>
+        </li>
+      {%- endif -%}
+
+      {% if github_url %}
+        <li>
+          <a class="github" href="{{ github_url }}">GitHub URL</a>
+        </li>
+      {%- endif -%}
+    </ul>
+
+    <div class="content project">
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock %}

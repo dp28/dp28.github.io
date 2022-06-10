@@ -22,10 +22,11 @@
 
   --primary-colour: var(--yellow);
   --secondary-colour: var(--blue);
+  --text-colour: var(--white);
 }
 
 .logo-start {
-  color: var(--white);
+  color: var(--text-colour);
 }
 
 .logo-end {
@@ -36,7 +37,7 @@ html,
 body {
   @apply antialiased;
   background-color: var(--background-colour);
-  color: var(--white);
+  color: var(--text-colour);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -153,7 +154,8 @@ hr {
   @apply pt-3;
 }
 
-.excerpt {
+.excerpt,
+.summary {
   @apply my-3;
 }
 
@@ -211,4 +213,23 @@ hr {
 
 .comment::after {
   content: ")";
+}
+
+.project-logo {
+  height: 80px;
+  width: auto;
+  display: inline-block;
+}
+
+.project-status {
+  display: inline;
+  color: var(--text-colour);
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+.project-status {
+  color: var(--blue);
 }

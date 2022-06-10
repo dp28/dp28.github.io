@@ -1,0 +1,24 @@
+<div>
+  {% for project in projects %}
+    <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
+      <h2>
+        <a href="{{ project.url | url }}">{{ project.data.title }}</a>
+        <span class="float-right project-status {{ project.data.status }}">
+          {{ project.data.status }}
+        </span>
+      </h2>
+
+      <div class="flex">
+        {%- if project.data.logo -%}
+          <img
+            class="project-logo mr-4 mt-4"
+            src="{{ project.data.logo.url }}"
+            alt="{{ project.data.logo.description }}"
+          />
+        {%- endif -%}
+
+        <p class="summary flex-grow">{{ project.data.summary }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
