@@ -42,20 +42,25 @@ module.exports = (config) => {
     "abandoned",
   ];
 
+  function sortByStatus(a, b) {
+    return (
+      StatusesInOrder.indexOf(a.data.status) -
+      StatusesInOrder.indexOf(b.data.status)
+    );
+  }
+
   config.addCollection("sortedProjects", (collection) =>
-    [...collection.getFilteredByGlob("src/projects/*.md")].sort(
-      (a, b) =>
-        StatusesInOrder.indexOf(a.data.status) -
-        StatusesInOrder.indexOf(b.data.status)
-    )
+    [...collection.getFilteredByGlob("src/projects/*.md")].sort(sortByStatus)
   );
 
   config.addCollection("activeProjects", (collection) =>
-    [...collection.getFilteredByGlob("src/projects/*.md")].filter(
-      (project) =>
-        project.data.status === "in progress" ||
-        project.data.status === "maintained"
-    )
+    [...collection.getFilteredByGlob("src/projects/*.md")]
+      .filter(
+        (project) =>
+          project.data.status === "in progress" ||
+          project.data.status === "maintained"
+      )
+      .sort(sortByStatus)
   );
 
   config.addCollection("recentPosts", (collection) =>
