@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta itemprop="name" content="Repertoire | DJP Dev">
+  <meta itemprop="description" content="Daniel Patterson&#39;s blog">
+
+  
+  <meta name="twitter:title" content="Repertoire | DJP Dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Daniel Patterson&#39;s blog">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  
+  <meta name="og:title" content="Repertoire | DJP Dev">
+  <meta name="og:description" content="Daniel Patterson&#39;s blog">
+  <meta name="og:url" content="https://dp28.github.io/">
+  <meta name="og:site_name" content="DJP Dev">
+  <meta name="og:locale" content="en_GB">
+  <meta name="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <title>Repertoire | DJP Dev</title>
+
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+
+  
+  </head>
+  <body class="flex flex-col min-h-screen">
+  <header>
+  <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
+  <div>
+    <h1>
+    <a href="/">
+      <span class="logo-start">DJP</span>
+      <span class="logo-end">Dev</span>
+    </a>
+    </h1>
+    <p>Daniel Patterson&#39;s blog</p>
+  </div>
+
+  <ul class="flex flex-wrap sm:w-48 w-full mt-6 md:justify-between justify-evenly">
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+  </ul>
+  </nav>
+</header>
+
+  <main class="container mx-auto max-w-3xl p-8 grow">
+    
+  <div>
+    <h2>Repertoire</h2>
+
+    
+      <div class="flex border-dotted border-b pb-2 border-gray-300"><img
+            class="project-logo mr-4 mt-4"
+            src="/project-logos/repertoire.png"
+            alt="List"
+          /><p class="summary flex-grow">A web app to make cooking simpler</p>
+      </div>
+    
+
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between items-baseline border-dotted border-b border-gray-300">
+      <li>
+        <span>Status:</span>
+        <span class="ml-1 project-status in-progress">
+          in progress
+        </span>
+      </li>
+
+      
+        <li>
+          <a href="https://repertoire.djpdev.com/">Project URL</a>
+        </li></ul>
+
+    <div class="content project">
+      <p>This is the most recent incarnation of my recipe app. I think this is my fourth
+iteration (<a href="https://github.com/dp28?tab=repositories&amp;q=recipe">GitHub suggests there have been 5 beforehand</a>
+but I worked on three of them in tandem).</p>
+<h2 id="goals" tabindex="-1">Goals</h2>
+<h3 id="realistic-goals" tabindex="-1">Realistic goals</h3>
+<p>In all likelihood, this app won’t result in much. If I follow my previous
+patterns, I’ll get bored, move on, then start another recipe-related project at
+a later date. Given that, I have a few goals for this project.</p>
+<p>Firstly, I’d like to <strong>explore Domain Driven Design in Rails</strong>. While I have
+done this to some extent before, I’d like to:</p>
+<ul>
+<li>Use event sourcing enough to get a good feel for its pros and cons</li>
+<li>Work out how useful the repository pattern can be in avoiding ActiveRecord’s
+pitfalls</li>
+<li>Try to get back to some classic Object-Oriented Design habits. I tend to
+prefer functional programming, but I don;t want to forget the positives of
+OOD. I also feel like Rails typically promotes a fairly weak form of OOD where
+a lot of logic gets pushed into essentially procedural “service objects”.</li>
+<li>See what happens when I fundamentally change a data model. Rather than
+thinking about recipes, I’m modelling them as a collection of steps. By
+changing my thinking, I hope to be able to unlock a lot of features that would
+otherwise be a lot harder to design.</li>
+</ul>
+<h3 id="less-realistic-goals" tabindex="-1">Less realistic goals</h3>
+<p>I cook quite a bit. I very often cook from my phone, looking up recipes online
+and following them. Unfortunately, I hate recipe websites.</p>
+<p>Recipe websites are optimized to make money. They have a load of irrelevant
+content for SEO purposes. That’s great for helping me find a recipe, but just
+gets in the way when I want to start cooking. The adds are even worse, popping
+up and covering the content I actually want to read. When I do actually get to
+the content, it’s formatted in a way that makes it easy to skim-read the recipe,
+not in a way that’s actually easy to follow on a phone (I have to scroll back up
+to the ingredients section <em>all the time</em>).</p>
+<p>Recipe websites also don’t work well with the way I cook. I’m often cooking
+multiple recipes, and may have leftovers I’m trying to incorporate. I’m not good
+at time estimation <span class="comment">a pretty classic software engineer trait</span>,
+so the rough estimates on recipe websites aren’t very useful.</p>
+<p>Finally, recipe websites don’t take advantage of the machines displaying them.
+Most sites are little better than a page in a book. If you’re lucky they might
+scale the ingredients or change the units, but not much more. I think there are
+<em>loads</em> of ways computers could simplify the cooking process if recipes were
+just slightly more structured.</p>
+
+    </div>
+  </div>
+
+  </main>
+  <script src="/assets/main.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta itemprop="name" content="Score Card | DJP Dev">
+  <meta itemprop="description" content="Daniel Patterson&#39;s blog">
+
+  
+  <meta name="twitter:title" content="Score Card | DJP Dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Daniel Patterson&#39;s blog">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  
+  <meta name="og:title" content="Score Card | DJP Dev">
+  <meta name="og:description" content="Daniel Patterson&#39;s blog">
+  <meta name="og:url" content="https://dp28.github.io/">
+  <meta name="og:site_name" content="DJP Dev">
+  <meta name="og:locale" content="en_GB">
+  <meta name="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <title>Score Card | DJP Dev</title>
+
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+
+  
+  </head>
+  <body class="flex flex-col min-h-screen">
+  <header>
+  <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
+  <div>
+    <h1>
+    <a href="/">
+      <span class="logo-start">DJP</span>
+      <span class="logo-end">Dev</span>
+    </a>
+    </h1>
+    <p>Daniel Patterson&#39;s blog</p>
+  </div>
+
+  <ul class="flex flex-wrap sm:w-48 w-full mt-6 md:justify-between justify-evenly">
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+  </ul>
+  </nav>
+</header>
+
+  <main class="container mx-auto max-w-3xl p-8 grow">
+    
+  <div>
+    <h2>Score Card</h2>
+
+    
+      <div class="flex border-dotted border-b pb-2 border-gray-300"><img
+            class="project-logo mr-4 mt-4"
+            src="/project-logos/score-card.png"
+            alt="A hand of cards"
+          /><p class="summary flex-grow">A Progressive Web App and Alexa Skill for recording game scores
+</p>
+      </div>
+    
+
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between items-baseline border-dotted border-b border-gray-300">
+      <li>
+        <span>Status:</span>
+        <span class="ml-1 project-status abandoned">
+          abandoned
+        </span>
+      </li>
+
+      
+        <li>
+          <a href="https://card-scores.herokuapp.com/">Project URL</a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/dp28/score-card">GitHub URL</a>
+        </li></ul>
+
+    <div class="content project">
+      <p>This was a simple project to record and calculate the scores of card games and
+board games. The React app is pretty simple, but the project gave me a chance
+to explore a few technologies I hadn’t used much:</p>
+<ul>
+<li>Websockets</li>
+<li>Amazon Alexa Skills</li>
+</ul>
+<h2 id="design" tabindex="-1">Design</h2>
+<p>This was a React app and Node server hosted on Heroku. It also provided an API
+that powered an Alexa Skill. It was backed by Mongo DB (because that was cheap
+and easy).</p>
+<p>I experimented with a Domain-Driven Design approach here, using event sourcing.
+The domain code was shared between the client and server as they both</p>
+<h2 id="highlights" tabindex="-1">Highlights</h2>
+<ul>
+<li>
+<p>I was able to produce a voice-controlled app that would also synchronize with
+multiple web UIs. Using human-readable (and memorable) ids made this process
+much simpler than it otherwise could have been.</p>
+</li>
+<li>
+<p>This made it through Amazon’s approval process</p>
+</li>
+<li>
+<p>Deploying to Heroku directly rather than using <code>git</code> allowed me to have a
+monorepo without heroku dictating my app structure</p>
+</li>
+</ul>
+<h2 id="downsides" tabindex="-1">Downsides</h2>
+<ul>
+<li>
+<p>It no longer works. I haven’t played as many board games and card games
+recently, so it didn’t feel worth maintaining.</p>
+</li>
+<li>
+<p>Voice interfaces are awkward to test and not fully under your control. The
+experience when using them is often much clunkier than I’d hope.</p>
+</li>
+<li>
+<p>A spreadsheet almost completely solves this problem</p>
+</li>
+<li>
+<p>The Alexa development portal was awkward to use (and fairly new)</p>
+</li>
+</ul>
+
+    </div>
+  </div>
+
+  </main>
+  <script src="/assets/main.bundle.js"></script>
+  </body>
+</html>

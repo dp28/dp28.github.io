@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta itemprop="name" content="Sprint Graph | DJP Dev">
+  <meta itemprop="description" content="Daniel Patterson&#39;s blog">
+
+  
+  <meta name="twitter:title" content="Sprint Graph | DJP Dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Daniel Patterson&#39;s blog">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  
+  <meta name="og:title" content="Sprint Graph | DJP Dev">
+  <meta name="og:description" content="Daniel Patterson&#39;s blog">
+  <meta name="og:url" content="https://dp28.github.io/">
+  <meta name="og:site_name" content="DJP Dev">
+  <meta name="og:locale" content="en_GB">
+  <meta name="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <title>Sprint Graph | DJP Dev</title>
+
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+
+  
+  </head>
+  <body class="flex flex-col min-h-screen">
+  <header>
+  <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
+  <div>
+    <h1>
+    <a href="/">
+      <span class="logo-start">DJP</span>
+      <span class="logo-end">Dev</span>
+    </a>
+    </h1>
+    <p>Daniel Patterson&#39;s blog</p>
+  </div>
+
+  <ul class="flex flex-wrap sm:w-48 w-full mt-6 md:justify-between justify-evenly">
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+  </ul>
+  </nav>
+</header>
+
+  <main class="container mx-auto max-w-3xl p-8 grow">
+    
+  <div>
+    <h2>Sprint Graph</h2>
+
+    
+      <div class="flex border-dotted border-b pb-2 border-gray-300"><img
+            class="project-logo mr-4 mt-4"
+            src="/project-logos/sprint-graph.svg"
+            alt="Graph"
+          /><p class="summary flex-grow">A Chrome extension for visualizing Jira sprints as a dependency graph
+</p>
+      </div>
+    
+
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between items-baseline border-dotted border-b border-gray-300">
+      <li>
+        <span>Status:</span>
+        <span class="ml-1 project-status maintained">
+          maintained
+        </span>
+      </li>
+
+      
+        <li>
+          <a href="https://chrome.google.com/webstore/detail/sprint-graph/hecogafddplfnihdjidkifklonijigap">Project URL</a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/dp28/sprint-graph">GitHub URL</a>
+        </li></ul>
+
+    <div class="content project">
+      <p>This is a Chrome extension that visualizes Jira stories as a graph. It reads the
+ticket ids currently shown on the page and builds a graph visualizing their
+relationships (both dependencies and parent-child relationships).</p>
+<p>It solves a specific problem I have: working out the dependency chains in a
+sprint. Jira is good at showing lists of tickets and their current states, but
+it is <em>terrible</em> at flagging blockers. The more complex the interactions between
+tickets, the worse Jira is. This extension lets me quickly get an overview of a
+sprint or an epic in a way that I can’t otherwise do.</p>
+<h2 id="highlights" tabindex="-1">Highlights</h2>
+<ul>
+<li>
+<p>I find it genuinely useful and use it at work about once a week</p>
+</li>
+<li>
+<p>Depending on how reliable Chrome Web Store’s user stats are, a few other
+people use this, too</p>
+</li>
+<li>
+<p>It wasn’t that hard to throw together</p>
+</li>
+</ul>
+<h2 id="downsides" tabindex="-1">Downsides</h2>
+<ul>
+<li>
+<p>It’s pretty rough. It does the bare minimum to be useful. It’d be great if it
+could show more data or allow updating tickets, but that’s just not worth my
+time at the moment given that I can do that using Jira’s UI.</p>
+</li>
+<li>
+<p>It could break at any time if Jira changes things and I’ll only find out the
+next time I use it. Maintenance could be painful.</p>
+</li>
+</ul>
+
+    </div>
+  </div>
+
+  </main>
+  <script src="/assets/main.bundle.js"></script>
+  </body>
+</html>

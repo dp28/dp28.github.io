@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta itemprop="name" content="Weather Clock | DJP Dev">
+  <meta itemprop="description" content="Daniel Patterson&#39;s blog">
+
+  
+  <meta name="twitter:title" content="Weather Clock | DJP Dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Daniel Patterson&#39;s blog">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  
+  <meta name="og:title" content="Weather Clock | DJP Dev">
+  <meta name="og:description" content="Daniel Patterson&#39;s blog">
+  <meta name="og:url" content="https://dp28.github.io/">
+  <meta name="og:site_name" content="DJP Dev">
+  <meta name="og:locale" content="en_GB">
+  <meta name="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <title>Weather Clock | DJP Dev</title>
+
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+
+  
+  </head>
+  <body class="flex flex-col min-h-screen">
+  <header>
+  <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
+  <div>
+    <h1>
+    <a href="/">
+      <span class="logo-start">DJP</span>
+      <span class="logo-end">Dev</span>
+    </a>
+    </h1>
+    <p>Daniel Patterson&#39;s blog</p>
+  </div>
+
+  <ul class="flex flex-wrap sm:w-48 w-full mt-6 md:justify-between justify-evenly">
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+  </ul>
+  </nav>
+</header>
+
+  <main class="container mx-auto max-w-3xl p-8 grow">
+    
+  <div>
+    <h2>Weather Clock</h2>
+
+    
+      <div class="flex border-dotted border-b pb-2 border-gray-300"><p class="summary flex-grow">A prototype for a physical clock that would show the weather
+</p>
+      </div>
+    
+
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between items-baseline border-dotted border-b border-gray-300">
+      <li>
+        <span>Status:</span>
+        <span class="ml-1 project-status finished">
+          finished
+        </span>
+      </li>
+
+      
+        <li>
+          <a href="https://weather-clock.djpdev.com/">Project URL</a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/dp28/weather-clock">GitHub URL</a>
+        </li></ul>
+
+    <div class="content project">
+      <p>I wanted to build an LED clock using a circle of 60 LEDs and use them to show
+more than just the time. I thought it could be useful to show the weather, too.
+Before building anything physical, I decided to prototype it fully in software
+as that would be faster. Plus I’d need to write some software anyway.</p>
+<p>The clock uses a weather API to get the forecast for Boston, Massachusetts. It
+then displays:</p>
+<ul>
+<li>The current time (the purple light is the hour, the dark green is the minute,
+the light green is the second)</li>
+<li>The current temperature (moving backwards from the current hour, each red
+light is an increment of +2 Celsius, or each teal light is an increment of -2
+Celsius)</li>
+<li>The weather forecast for the next 12 hours (each 5 lights represents the
+forecast for an hour. The more grey, the more cloud. The more blue, the more
+rain. The more yellow, the more sun/clear night. The more white, the more snow.)</li>
+</ul>
+<h2 id="highlights" tabindex="-1">Highlights</h2>
+<ul>
+<li>
+<p>It works (for Boston, at least)</p>
+</li>
+<li>
+<p>It demonstrated that the concept (in it’s current form at least) was probably
+too confusing to be useful</p>
+</li>
+</ul>
+<h2 id="downsides" tabindex="-1">Downsides</h2>
+<ul>
+<li>I never ended up using it</li>
+</ul>
+
+    </div>
+  </div>
+
+  </main>
+  <script src="/assets/main.bundle.js"></script>
+  </body>
+</html>

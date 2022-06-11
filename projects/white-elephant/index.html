@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta itemprop="name" content="White Elephant | DJP Dev">
+  <meta itemprop="description" content="Daniel Patterson&#39;s blog">
+
+  
+  <meta name="twitter:title" content="White Elephant | DJP Dev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Daniel Patterson&#39;s blog">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  
+  <meta name="og:title" content="White Elephant | DJP Dev">
+  <meta name="og:description" content="Daniel Patterson&#39;s blog">
+  <meta name="og:url" content="https://dp28.github.io/">
+  <meta name="og:site_name" content="DJP Dev">
+  <meta name="og:locale" content="en_GB">
+  <meta name="og:type" content="website">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <title>White Elephant | DJP Dev</title>
+
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+
+  
+  </head>
+  <body class="flex flex-col min-h-screen">
+  <header>
+  <nav class="container mx-auto max-w-3xl px-8 pt-2 flex flex-wrap justify-between">
+  <div>
+    <h1>
+    <a href="/">
+      <span class="logo-start">DJP</span>
+      <span class="logo-end">Dev</span>
+    </a>
+    </h1>
+    <p>Daniel Patterson&#39;s blog</p>
+  </div>
+
+  <ul class="flex flex-wrap sm:w-48 w-full mt-6 md:justify-between justify-evenly">
+    <li>
+      <a href="/posts">Blog</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+  </ul>
+  </nav>
+</header>
+
+  <main class="container mx-auto max-w-3xl p-8 grow">
+    
+  <div>
+    <h2>White Elephant</h2>
+
+    
+      <div class="flex border-dotted border-b pb-2 border-gray-300"><img
+            class="project-logo mr-4 mt-4"
+            src="/project-logos/white-elephant.png"
+            alt="Wrapped gifts"
+          /><p class="summary flex-grow">A gift exchange game where players can steal gifts from each other.
+Also known as Yankee Swap or Dirty Santa.
+</p>
+      </div>
+    
+
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between items-baseline border-dotted border-b border-gray-300">
+      <li>
+        <span>Status:</span>
+        <span class="ml-1 project-status finished">
+          finished
+        </span>
+      </li>
+
+      
+        <li>
+          <a href="https://white-elephant.djpdev.com/">Project URL</a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/dp28/white-elephant">GitHub URL</a>
+        </li></ul>
+
+    <div class="content project">
+      <p>It was pretty difficult to meet up with people in the run up to Christmas in
+2020 <span class="comment">thanks, covid</span>. I wrote this app to make it a
+little easier for groups of people to exchange gifts remotely. I’ve really
+enjoyed playing white elephant in person, so this seemed like a good idea.</p>
+<h2 id="design" tabindex="-1">Design</h2>
+<p>This is a React app hosted in S3 behind Cloudflare. I’ve used this approach for
+a few sites at this point, so it was something I could get running quickly.</p>
+<p>This uses peer-to-peer communication using WebRTC. I entertained the idea of
+publicizing this app more broadly. If it gained traction, I didn’t want to have
+to deal with any server costs. This design allowed me to play with peer-to-peer
+systems and offload all of the computation onto clients.</p>
+<h2 id="highlights" tabindex="-1">Highlights</h2>
+<ul>
+<li>
+<p>This is probably the first of my side projects that people I didn’t directly
+know beforehand used in production. Both my work and my wife’s work used this
+for a holiday gift exchange.</p>
+</li>
+<li>
+<p>It’s free to host, and should scale fairly well</p>
+</li>
+<li>
+<p>I’ve used this for other things, like deciding which player/civilization
+people should play as in games (eg Age of Empires). It can be more fun than
+randomizing game starts.</p>
+</li>
+</ul>
+<h2 id="downsides" tabindex="-1">Downsides</h2>
+<ul>
+<li>
+<p>Peer-to-peer meant that it was hard to persist data. The host of the game has
+to be online at all times.</p>
+</li>
+<li>
+<p>Peer-to-peer is also somewhat confusing in the code, as every client could be
+either a host or a participant.</p>
+</li>
+</ul>
+
+    </div>
+  </div>
+
+  </main>
+  <script src="/assets/main.bundle.js"></script>
+  </body>
+</html>
