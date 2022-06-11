@@ -63,6 +63,24 @@ module.exports = (config) => {
       .sort(sortByStatus)
   );
 
+  config.addCollection("visibleTags", () => [
+    "app",
+    "communication",
+    "ddd",
+    "library",
+    "recipes",
+    "software-development",
+    "weather",
+    "writing",
+    "voice",
+    "chrome-extension",
+    "graphql",
+    "javascript",
+    "rails",
+    "react",
+    "ruby",
+  ]);
+
   config.addCollection("recentPosts", (collection) =>
     [...collection.getFilteredByGlob("src/posts/*.md")].reverse().slice(0, 3)
   );
