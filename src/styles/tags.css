@@ -10,6 +10,7 @@
   @apply inline-block px-1 py-1 mr-2 mb-2 text-xs font-bold rounded lowercase text-white;
   border: 1px solid transparent;
   color: black;
+  cursor: pointer;
 }
 
 .tag:hover {

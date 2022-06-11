@@ -10,17 +10,32 @@ pagination:
   - draft
 eleventyComputed:
   title: "{{ tag }}"
-permalink: /posts/tag/{{ tag }}/
+permalink: /tag/{{ tag }}/
 ---
 
 {% extends 'page.njk' %}
 
 {% block body %}
-  <p class="text-center text-sm italic mb-6">(Posts filtered by <strong>{{tag}}</strong>.)</p>
+  {% set posts = collections.post | withTag(tag) | reverse %}
+  {% set projects = collections.sortedProjects | withTag(tag) %}
 
-  {% set posts = collections[tag] | reverse %}
+  <h1 class="mt-16 mb-4 text-colour">Blog posts</h1>
+
+  <p class="text-sm italic mb-6">
+    {{ posts.length }} post{{ '' if posts.length === 1 else 's'}} match{{ 'es' if posts.length === 1 else ''}} the tag
+    <strong class="ml-1 tag {{ tag }}">{{tag}}</strong>
+  </p>
 
   {% include "posts.njk" %}
+
+  <h1 class="mt-16 mb-4 text-colour">Projects</h1>
+
+  <p class="text-sm italic mb-6">
+    {{ projects.length }} project{{ '' if projects.length === 1 else 's'}} match{{ 'es' if projects.length === 1 else ''}} the tag
+    <strong class="ml-1 tag {{ tag }}">{{tag}}</strong>
+  </p>
+
+  {% include "projects.njk" %}
 
   {% include "tags.njk" %}
 {% endblock %}

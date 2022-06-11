@@ -85,6 +85,12 @@ module.exports = (config) => {
     [...collection.getFilteredByGlob("src/posts/*.md")].reverse().slice(0, 3)
   );
 
+  config.addFilter("withTag", (collection, tag) =>
+    collection.filter(
+      (element) => !element.data.draft && element.data.tags.includes(tag)
+    )
+  );
+
   return {
     pathPrefix: require("./src/globals/site.json").baseUrl,
     dir: {
