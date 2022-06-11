@@ -10,9 +10,9 @@ github_url: https://github.com/dp28/weather-clock
 tags:
   - project
   - app
+  - weather
   - javascript
   - react
-  - weather
 ---
 
 I wanted to build an LED clock using a circle of 60 LEDs and use them to show

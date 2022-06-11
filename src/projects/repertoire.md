@@ -10,13 +10,13 @@ logo:
 tags:
   - project
   - app
-  - javascript
-  - react
-  - ruby
-  - rails
-  - graphql
   - ddd
   - recipes
+  - javascript
+  - graphql
+  - rails
+  - react
+  - ruby
 ---
 
 This is the most recent incarnation of my recipe app. I think this is my fourth

@@ -13,8 +13,8 @@ logo:
 tags:
   - project
   - library
-  - javascript
   - weather
+  - javascript
 ---
 
 Like [weather-type](./weather-type), I originally intended to use this as part

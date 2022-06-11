@@ -12,9 +12,9 @@ logo:
 tags:
   - project
   - app
-  - javascript
   - software-development
   - chrome-extension
+  - javascript
 ---
 
 This is a Chrome extension that visualizes Jira stories as a graph. It reads the

@@ -14,10 +14,10 @@ tags:
   - project
   - app
   - javascript
+  - graphql
+  - rails
   - react
   - ruby
-  - rails
-  - graphql
 ---
 
 This is a travel blog for a six month trip my wife (then girlfriend) and I took

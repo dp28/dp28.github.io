@@ -12,10 +12,10 @@ logo:
 tags:
   - project
   - app
-  - javascript
-  - react
   - voice
   - ddd
+  - javascript
+  - react
 ---
 
 This was a simple project to record and calculate the scores of card games and

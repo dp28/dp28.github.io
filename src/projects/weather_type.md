@@ -10,8 +10,8 @@ github_url: https://github.com/dp28/weather-type
 tags:
   - project
   - library
-  - javascript
   - weather
+  - javascript
 ---
 
 I originally intended to use this as part of an app that would compare and
