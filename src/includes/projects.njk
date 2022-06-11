@@ -1,5 +1,5 @@
 <div>
-  {% for project in collections.sortedProjects %}
+  {% for project in projects %}
     <div class="mb-8 border-dotted border-b pb-8 border-gray-300">
       <h2>
         <a href="{{ project.url | url }}">{{ project.data.title }}</a>

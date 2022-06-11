@@ -25,6 +25,18 @@
   --text-colour: var(--white);
 }
 
+.text-colour {
+  color: var(--text-colour);
+}
+
+.primary-colour {
+  color: var(--primary-colour);
+}
+
+.secondary-colour {
+  color: var(--secondary-colour);
+}
+
 .logo-start {
   color: var(--text-colour);
 }

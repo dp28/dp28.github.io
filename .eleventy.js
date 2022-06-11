@@ -50,6 +50,18 @@ module.exports = (config) => {
     )
   );
 
+  config.addCollection("activeProjects", (collection) =>
+    [...collection.getFilteredByGlob("src/projects/*.md")].filter(
+      (project) =>
+        project.data.status === "in progress" ||
+        project.data.status === "maintained"
+    )
+  );
+
+  config.addCollection("recentPosts", (collection) =>
+    [...collection.getFilteredByGlob("src/posts/*.md")].reverse().slice(0, 3)
+  );
+
   return {
     pathPrefix: require("./src/globals/site.json").baseUrl,
     dir: {

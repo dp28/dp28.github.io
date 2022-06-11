@@ -6,5 +6,23 @@ permalink: "/"
 
 {% block body %}
 
+  <p>
+    I'm Daniel Patterson, a software developer from Northern Ireland, now living
+    in Boston, Massachusetts. I'm interested in software development <span class="comment">shock</span>,
+    cooking, travel, epic fantasy, and chocolate <span class="comment">mainly chocolate</span>.
+  </p>
+
+  <h1 class="mt-16 mb-4 text-colour">Latest blog posts</h1>
+
+  {% set posts = collections.recentPosts %}
+
+  {% include "posts.njk" %}
+
+  <h1 class="mt-16 mb-4 text-colour">Current projects</h1>
+
+  {% set projects = collections.activeProjects %}
+
+  {% include "projects.njk" %}
+
   {% include "tags.njk" %}
 {% endblock %}

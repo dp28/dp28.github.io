@@ -5,5 +5,8 @@ permalink: /projects/
 {% extends 'page.njk' %}
 
 {% block body %}
+
+  {% set projects = collections.sortedProjects %}
+
   {% include "projects.njk" %}
 {% endblock %}

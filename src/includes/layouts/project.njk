@@ -22,7 +22,7 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/projects/'}}{{ title | s
       </div>
     {% endif %}
 
-    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between justify-evenly border-dotted border-b border-gray-300">
+    <ul class="flex flex-wrap w-full mt-2 pb-2 md:justify-between items-baseline border-dotted border-b border-gray-300">
       <li>
         <span>Status:</span>
         <span class="ml-1 project-status {{ status | slug }}">
