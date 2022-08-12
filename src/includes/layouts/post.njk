@@ -34,8 +34,11 @@ permalink: "{% if path %}{{ path | slug }}{% else %}{{'/posts/'}}{{ title | slug
       {% endif %}
     {% endif %}
 
+    <hr/>
+    <br/>
+
     <div class="content post">
-      {% if content | toc %}
+      {% if show_table_of_contents and content | toc %}
         <hr />
 
         <h3>Table of Contents</h3>

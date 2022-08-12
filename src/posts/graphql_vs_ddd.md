@@ -5,7 +5,7 @@ excerpt: |
   Both GraphQL and Domain-Driven Design (DDD) have been in the web development
   limelight recently. But should you use them together?
 date: 2022-08-12
-# draft: true
+show_table_of_contents: false
 tags:
   - post
   - software-development
@@ -17,7 +17,7 @@ How compatible are GraphQL and DDD at a strategic level? When used together long
 term, where do they support each other and what is likely to cause friction
 between them?
 
-To compare the two, let's briefly have a look at each in turn.
+Before comparing them, let's briefly have a look at each in turn.
 
 ## GraphQL
 
@@ -190,6 +190,10 @@ easier to determine when you've successfully rolled out GraphQL, but it's also
 easier to fall into the trap of seeing the GraphQL rollout as the end goal. In
 reality, neither GraphQL nor DDD are worth implementing unless they're actually
 providing the value your organisation needs.
+
+<br/>
+<br/>
+<br/>
 
 ---
 

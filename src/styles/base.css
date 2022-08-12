@@ -64,19 +64,19 @@ h6 {
 }
 
 h1 {
-  @apply text-5xl;
+  @apply text-5xl pt-6;
 }
 
 h2 {
-  @apply text-3xl;
+  @apply text-3xl pt-5;
 }
 
 h3 {
-  @apply text-2xl;
+  @apply text-2xl pt-4;
 }
 
 h4 {
-  @apply text-xl;
+  @apply text-xl pt-3;
 }
 
 a {

@@ -11,7 +11,7 @@ module.exports = (config) => {
   config.setLibrary("md", markdownIt);
 
   config.addPlugin(require("eleventy-plugin-nesting-toc"), {
-    tags: ["h3", "h4", "h5"],
+    tags: ["h3", "h4"],
     ul: false,
   });
 
